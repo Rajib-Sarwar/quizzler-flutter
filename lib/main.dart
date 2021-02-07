@@ -47,7 +47,7 @@ class _QuizPageState extends State<QuizPage> {
         ));
       }
     });
-    if (quizeBrain.next()) {
+    if (quizeBrain.isFinished()) {
       showAlert();
     }
   }
