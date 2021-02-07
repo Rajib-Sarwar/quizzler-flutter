@@ -31,10 +31,17 @@ class QuizeBrain {
         true),
   ];
 
-  void next() {
+  bool next() {
     if (_number < _questions.length - 1) {
       _number++;
+      return false;
+    } else {
+      return true;
     }
+  }
+
+  void reset() {
+    _number = 0;
   }
 
   String getText() {
